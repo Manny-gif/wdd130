@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+}
+.dark-background {
+    background-color: gray;
+}
+/* .dark-background img { */
+    /* max-width: 300px;
+    margin: 0 .imag;
+} */
+.image {
+width: 20% ;
+margin: 5%;
+}
+.image{
+    text-align: center
+    border20px solid black}
