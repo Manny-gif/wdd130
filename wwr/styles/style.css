@@ -199,6 +199,51 @@ footer .social img {
     align-items: left;
     height: 80px;
 }
+
+/* RIVERS */
+
+.rafting_blue-img {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   margin: 20px;
+   padding: 20px;
+   float: right;
+}
+h2,p {
+    font-family: 'pangolin', cursive;
+    font-size: 1.5em;
+    color: rgb(35, 32, 32);
+    text-align: center;
+    padding: 20px;
+}
+h3 {
+    font-family: 'pangolin', cursive;
+    font-size: 1.5em;
+    color: rgb(35, 32, 32);
+    text-align: center;
+    padding: 20px;
+}
+.rafting_scene-img {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px;
+    padding: 20px;  
+    float : right;
+}
+.rafting-img {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px;
+    padding: 20px;
+}
+.rafting_view-img {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px;
+    padding: 20px;
+}
+
+
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
@@ -242,3 +287,4 @@ footer .social img {
         margin-top: 25px;
     }
 }
+
