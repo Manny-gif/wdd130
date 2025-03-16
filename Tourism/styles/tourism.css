@@ -1,0 +1,65 @@
+nav { 
+    display: flex;
+    justify-content: space-around;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+nav a { 
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    padding: 15px 30px;
+
+}
+#hero-msg h1, #hero-msg h2 { 
+    text-align: center;
+    color: black;
+}
+/* #hero img { 
+    width: 1500px;
+} */
+body { 
+    background-color: #a6b9aa;
+    margin: 0;
+    padding: 0;
+    z-index: -1;
+}
+.logo { 
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+}
+.logo:hover { 
+    width: 100px;
+    height: 100px;
+}
+.card-img {
+    border: 5px solid #206f69;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+    width : 600px;
+}
+.card-img:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+.falls1-card { 
+    grid-column: 8/10;
+    grid-row: 2/3;
+    margin: 200px 0;
+}
+footer { 
+    background-color: rgb(241, 240, 240);
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer a { 
+    color: rgb(35, 32, 32);
+    text-decoration: none;
+}
+footer a:hover { 
+    background-color: rgb(167, 165, 165);
+}
