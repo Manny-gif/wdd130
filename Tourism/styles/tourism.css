@@ -1,65 +1,166 @@
-nav { 
-    display: flex;
-    justify-content: space-around;
-    max-width: 1600px;
-    margin: 0 auto;
-}
-nav a { 
-    text-decoration: none;
-    color: black;
-    text-align: center;
-    padding: 15px 30px;
-
-}
-#hero-msg h1, #hero-msg h2 { 
-    text-align: center;
-    color: black;
-}
-/* #hero img { 
-    width: 1500px;
-} */
-body { 
-    background-color: #a6b9aa;
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    z-index: -1;
+    background-color:  #a6b9aa;
 }
-.logo { 
-    width: 80px;
-    height: 80px;
-    margin: 5px;
+
+#content {
+    max-width: 1200px;
+    margin: 0 auto;
 }
-.logo:hover { 
-    width: 100px;
-    height: 100px;
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    color: black;
+    padding: 15px 20px;
 }
+
+.logo {
+    height: 60px;
+}
+
+nav a {
+    color: #9e9169;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+#hero {
+    position: relative;
+    text-align: center;
+    color: #fcfbfb;
+}
+
+#hero-box {
+    position: relative;
+}
+
+#hero-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+#hero-msg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.home-title {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* Grid Layout for Sections */
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.falls1-card, .falls2-card, .falls3-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
 .card-img {
-    border: 5px solid #206f69;
-    transition: transform .5s;
-    box-shadow: 5px 5px 10px #6f7364;
-    width : 600px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
 }
-.card-img:hover {
-    opacity: .6;
-    transform: scale(1.1);
+
+.text-box {
+    padding: 10px;
+    text-align: left;
+    background-color:gray ;
+    color: black;
 }
-.falls1-card { 
-    grid-column: 8/10;
-    grid-row: 2/3;
-    margin: 200px 0;
+.text-box1 {
+    padding: 10px;
+    text-align: left;
+    background-color:gray ;
+    color: black;
 }
+.text-box2 {
+    padding: 10px;
+    text-align: left;
+    background-color:gray ;
+    color: black;
+}
+/* Footer */
 footer { 
-    background-color: rgb(241, 240, 240);
+    background-color: #333;
     padding: 25px 50px;
     margin-top: 200px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-footer a { 
-    color: rgb(35, 32, 32);
-    text-decoration: none;
+
+.social a img {
+    margin: 10px;
 }
-footer a:hover { 
-    background-color: rgb(167, 165, 165);
+
+/* tradition */
+#hero1 {
+    position: relative;
+    text-align: right;
+    color: #a6b9aa;
+    font: pangolin;
+}
+
+#hero-box1 {
+    position: relative;
+}
+
+#hero-img1 {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+#hero-msg1 {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    transform: translate(1%);
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .home-grid {
+        grid-template-columns: 1fr;
+    }
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav {
+        margin-top: 10px;
+    }
 }
