@@ -155,7 +155,8 @@ footer {
 #hero2 {
     text-align: center;
     padding: 40px 10%;
-    color: white;
+    color: #a6b9aa;
+    font: pangolin;
 }
 /* .image {
     display: block;
