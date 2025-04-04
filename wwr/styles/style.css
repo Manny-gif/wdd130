@@ -202,7 +202,43 @@ footer .social img {
 
 /* RIVERS */
 
-  
+.main_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+
+.main_grid section {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f4f2f2a7;
+    text-align: center;
+}
+
+.main_grid img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.main_grid h2, 
+.main_grid h3, 
+.main_grid h4, 
+.main_grid h5 {
+    margin-top: 0;
+    color: #2c3e50;
+}
+
+.main_grid p {
+    color: #2e2d2d;
+    line-height: 1.6;
+}
+
 
 
 @media screen and (max-width: 900px) {
